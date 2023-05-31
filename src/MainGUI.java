@@ -100,6 +100,8 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
         calculatorScreen.setText("");
         calculatorScreen.addKeyListener(this);
 
+        historyList = new ArrayList<String>();
+
         setVisible(true);
     }
 
@@ -142,7 +144,10 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
             calculatorScreen.setText("");
 
         } else if (button.equals("History")) {
-            History a = new History(historyList);
+            num1 = "";
+            num2 = "";
+            operation = "";
+            History a = new History(historyList, calculatorScreen);
             a.setVisible(true);
         }
     }
@@ -230,6 +235,10 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
             shiftClicked = false;
         } else if (keyCode == KeyEvent.VK_A) {
             ActionEvent a = new ActionEvent(clearAll, 1, "1");
+            actionPerformed(a);
+            shiftClicked = false;
+        }  else if (keyCode == KeyEvent.VK_H) {
+            ActionEvent a = new ActionEvent(history, 1, "1");
             actionPerformed(a);
             shiftClicked = false;
         }
