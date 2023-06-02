@@ -14,7 +14,7 @@ public class History extends JFrame implements ActionListener {
     private static String[] history;
     private JTextArea screen;
     private ArrayList<String> historyArrList;
-    private MainGUI mainCalc;
+    private MainGUI mainCalc
     private JButton historyButtonMain;
 
     public History(ArrayList<String> list, MainGUI mainCalc, JTextArea screen, JButton historyButtonMain) {
