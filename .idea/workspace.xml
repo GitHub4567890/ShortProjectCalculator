@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a06f818-3791-4088-b8d4-0ab9da91312e" name="Changes" comment="3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainGUI.java" afterDir="false" />
+    <list default="true" id="0a06f818-3791-4088-b8d4-0ab9da91312e" name="Changes" comment="Update 1: fixing commit">
+      <change beforePath="$PROJECT_DIR$/src/CalculatorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculatorRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,35 @@
       <option name="project" value="LOCAL" />
       <updated>1685558575202</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update 3: Improved Efficiency">
+      <created>1685720068383</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685720068383</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update 1: Created GUI&#10;Update 2: Added Basic List Creation Logic&#10;Update 3: Added Clear and Back Buttons">
+      <created>1685720244400</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685720244400</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update 1: Created GUI and Added Basic Logic&#10;Update 2: Added Keyboard Support&#10;Update 3: Improved Continuous Calculation">
+      <created>1685720341803</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685720341803</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update 1: fixing commit">
+      <created>1685720384128</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685720384128</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +131,10 @@
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="Update 3: Improved Efficiency" />
+    <MESSAGE value="Update 1: Created GUI&#10;Update 2: Added Basic List Creation Logic&#10;Update 3: Added Clear and Back Buttons" />
+    <MESSAGE value="Update 1: Created GUI and Added Basic Logic&#10;Update 2: Added Keyboard Support&#10;Update 3: Improved Continuous Calculation" />
+    <MESSAGE value="Update 1: fixing commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 1: fixing commit" />
   </component>
 </project>
