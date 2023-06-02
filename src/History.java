@@ -14,14 +14,18 @@ public class History extends JFrame implements ActionListener {
     private static String[] history;
     private JTextArea screen;
     private ArrayList<String> historyArrList;
+    private MainGUI mainCalc;
+    private JButton historyButtonMain;
 
-    public History(ArrayList<String> list, JTextArea screen) {
+    public History(ArrayList<String> list, MainGUI mainCalc, JTextArea screen, JButton historyButtonMain) {
         history = new String[list.size()];
         for (int i = 0; i <= list.size() - 1; i++) {
             history[i] = list.get(i);
         }
         this.screen = screen;
         historyArrList = list;
+        this.mainCalc = mainCalc;
+        this.historyButtonMain = historyButtonMain;
         createUIComponents();
     }
 
@@ -33,7 +37,6 @@ public class History extends JFrame implements ActionListener {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         backMain.addActionListener(this);
         clear.addActionListener(this);
-
         Container ControlHost = getContentPane();
         ControlHost.setLayout(new FlowLayout());
         historyList = new JList<>(history);
@@ -56,6 +59,9 @@ public class History extends JFrame implements ActionListener {
         if (button.equals(clear)) {
             historyList.removeAll();
             historyArrList.clear();
+            setVisible(false);
+            ActionEvent a = new ActionEvent(historyButtonMain, 1, "1");
+            mainCalc.actionPerformed(a);
         } else if (button.equals(backMain)) {
             setVisible(false);
         }
