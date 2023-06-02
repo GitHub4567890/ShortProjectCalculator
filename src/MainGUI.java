@@ -28,7 +28,7 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
     private static String num2 = "";
     private static String operation = "";
     private static ArrayList<String> historyList;
-    private boolean shiftClicked;
+    private boolean shiftClicked
     private boolean equalPressed;
 
     public MainGUI() {
