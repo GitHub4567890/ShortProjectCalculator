@@ -6,7 +6,7 @@ public class Calculator {
     public Calculator(String num1, String num2, String operation) {
         this.num1 = Double.parseDouble(num1);
         this.num2 = Double.parseDouble(num2);
-        this.operation = operation;
+        this.operation = operation
     }
 
     public double calculate() {
