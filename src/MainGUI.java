@@ -29,6 +29,7 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
     private static String operation = "";
     private static ArrayList<String> historyList;
     private boolean shiftClicked;
+    private boolean equalPressed;
 
     public MainGUI() {
         createUIComponents();
@@ -109,13 +110,21 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
     public void actionPerformed(ActionEvent e) {
         String button = ((JButton) e.getSource()).getText();
         if (button.equals("1") || button.equals("2") || button.equals("3") || button.equals("4") || button.equals("5") || button.equals("6") || button.equals("7") || button.equals("8") || button.equals("9") || button.equals("0") || button.equals(".")) {
+            if (equalPressed) {
+                calculatorScreen.setText("");
+                equalPressed = false;
+            }
             calculatorScreen.append(button);
         } else if (button.equals("/") || button.equals("x") || button.equals("-") || button.equals("+")) {
+            if (equalPressed) {
+                equalPressed = false;
+            }
             num1 = calculatorScreen.getText();
             operation = button;
             calculatorScreen.setText("");
 
         } else if (button.equals("=")) {
+            equalPressed = true;
             num2 = calculatorScreen.getText();
             if (num1.equals("")) {
                 if (num2.equals("")) {
@@ -147,14 +156,13 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
             num1 = "";
             num2 = "";
             operation = "";
-            History a = new History(historyList, calculatorScreen);
+            History a = new History(historyList, this, calculatorScreen, history);
             a.setVisible(true);
         }
     }
 
     @Override
     public void keyTyped(KeyEvent e) {
-//        System.out.println(e.getKeyCode());
     }
 
     @Override
