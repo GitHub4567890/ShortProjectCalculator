@@ -32,7 +32,7 @@ public class History extends JFrame implements ActionListener {
     private void createUIComponents() {
         setContentPane(panel1);
         setTitle("Calculator History");
-        setSize(470, 330);
+        setSize(470, 370);
         setLocation(470, 230);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         backMain.addActionListener(this);

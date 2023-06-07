@@ -126,6 +126,9 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
         } else if (button.equals("=")) {
             equalPressed = true;
             num2 = calculatorScreen.getText();
+            if (operation.equals("")) {
+                operation = "NO OPERATION";
+            }
             if (num1.equals("")) {
                 if (num2.equals("")) {
                     calculatorScreen.setText("0.0");
@@ -251,10 +254,6 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
             shiftClicked = false;
         }
     }
-
-//    @Override
-//    public void keyPressed(KeyEvent e) {
-//    }
 
     @Override
     public void keyReleased(KeyEvent e){
