@@ -38,7 +38,7 @@ public class MainGUI extends JFrame implements ActionListener, KeyListener {
     private void createUIComponents() {
         setContentPane(mainPanel);
         setTitle("Calculator");
-        setSize(470, 330);
+        setSize(490, 350);
         setLocation(470, 230);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         buttonOne.addActionListener(this);
